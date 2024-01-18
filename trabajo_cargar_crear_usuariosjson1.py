@@ -25,7 +25,7 @@ while True:
     print("9. Estudiantes en riesgos")
     print("10. Modulo de reportes")
     print("11. salir")    
-    x=validar_opcion("Opcion: ",1,12)
+    x=validar_opcion("Opcion: ",1,11)
 
     while x==1:
             x=mod_reg(users)
@@ -47,6 +47,6 @@ while True:
             x=mod_riesgo()
     while x==10:
             x=mod_listar()
-    if x==1:
+    if x==11:
             print("saliendo")
             break
