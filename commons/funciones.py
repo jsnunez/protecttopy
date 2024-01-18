@@ -52,7 +52,7 @@ def mod_reg(i):
         else:
            x=0                   
     return x   
-    system("cls")                                  
+
 
 def mod_prueba():
     with open('data.json') as file:
@@ -102,7 +102,7 @@ def mod_prueba():
     else:
         x=0    
     return x
-    system("cls")   
+
         
 def mod_cruta():
     data =  open("rutas.json") 
@@ -134,7 +134,7 @@ def mod_cruta():
          x=5
         else:
          x=0   
-    system("cls")                     
+                
     return x   
 
 def mod_regr(rutas):
@@ -265,7 +265,7 @@ def mod_regr(rutas):
     with open('data.json', 'w') as file:
         json.dump(data1, file)
     input("oprima enter para continuar")
-    system("cls")   
+  
 
 def mod_entrena(rutas):
     
@@ -309,7 +309,8 @@ def mod_entrena(rutas):
             data1.append(usuarios)               
         with open('docente.json', 'w') as file:
             json.dump(data1, file)
-    system("cls")              
+
+            
 
 def mod_asignacion():
     with open('data.json') as file:
@@ -355,7 +356,8 @@ def mod_asignacion():
         data1.append(usuarios)        
     with open('data.json', 'w') as file:
         json.dump(data1, file)
-    system("cls")   
+
+
                              
 def mod_matricula(salones,rutas):
     flag=0
@@ -521,7 +523,7 @@ def mod_skill():
     input("opriam enter para continuar")    
     with open('data.json', 'w') as file:
         json.dump(data1, file)       
-    system("cls")   
+
 
 def mod_riesgo():
     with open('data.json') as file:
@@ -540,7 +542,7 @@ def mod_riesgo():
             usuarios["acudiente"],
             usuarios["rendimiento"])    
     input("estos campers tienen rendimiento bajo, oprima enter para continuar")         
-    system("cls")   
+
 
 def mod_listar():
               
@@ -728,7 +730,7 @@ def mod_listar():
                 print("pasaron skill4 : ",skill4)            
                 print("pasaron skill5 : ",skill5)    
         input("oprima enter para continuar")                                      
-    system("cls")   
+
 
 def validar_opcion(enunciando,inferior,superior):
     while True:
