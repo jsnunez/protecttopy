@@ -17,16 +17,15 @@ while True:
     print("1. Registro de campers")
     print("2. Registro ruta")
     print("3. Registro prueba")
-    print("4. Registro area de entrenamiento")
-    print("5. Creación de rutas de entrenamiento")
-    print("6. asignacion de rutas de entrenamiento")
-    print("7. asignacion de entrenadores")
-    print("8. Gestor de matriculas")
-    print("9. evaluacion campers")
-    print("10. Estudiantes en riesgos")
-    print("11. Modulo de reportes")
-    print("12. salir")    
-    x=validar_opcion("Opcion: ",1,12)
+    print("4. Creación de rutas de entrenamiento")
+    print("5. asignacion de rutas de entrenamiento")
+    print("6. asignacion de entrenadores")
+    print("7. Gestor de matriculas")
+    print("8. evaluacion campers")
+    print("9. Estudiantes en riesgos")
+    print("10. Modulo de reportes")
+    print("11. salir")    
+    x=validar_opcion("Opcion: ",1,121
 
     while x==1:
             x=mod_reg(users)
@@ -34,20 +33,20 @@ while True:
             x=mod_regr(rutas)        
     while x==3:
             x=mod_prueba()
-    while x==5:
+    while x==4:
             x=mod_cruta()
-    while x==6:
+    while x==5:
             x=mod_asignacion()
-    while x==7:
+    while x==6:
             x=mod_entrena(rutas)   
-    while x==8:
+    while x==7:
             x=mod_matricula(salones,rutas)   
-    while x==9:
+    while x==8:
             x=mod_skill()
-    while x==10:
+    while x==9:
             x=mod_riesgo()
-    while x==11:
+    while x==10:
             x=mod_listar()
-    if x==12:
+    if x==11:
             print("saliendo")
             break
